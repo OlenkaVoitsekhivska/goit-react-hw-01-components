@@ -1,0 +1,25 @@
+.table{
+    width: 500px;
+    text-align: justify;
+}
+.table,
+th,
+td {
+    border: 1px solid rgb(244, 244, 244);
+    border-collapse: collapse;
+    text-align: center;
+}
+.table__row:nth-child(2n){
+    background-color: rgb(236, 241, 243);
+}
+.table__head{
+    background-color: rgb(0, 188, 213);
+    color:white;
+}
+.table__row{
+  color:rgb(100, 102, 106);
+    text-transform: capitalize;
+}
+td,th{
+    padding:10px;
+}
