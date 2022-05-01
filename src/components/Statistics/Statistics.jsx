@@ -17,9 +17,11 @@ function Statistics({ title, stats }) {
 }
 Statistics.propTypes = {
   title: PropTypes.string,
-  id: PropTypes.string,
-  label: PropTypes.string,
-  percentage: PropTypes.number,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    })
+  ),
 };
 
 export default Statistics;
